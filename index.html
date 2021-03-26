@@ -6,45 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/44a9982843.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
+
         <div><img src="images/logo/Reservia.svg" alt="Logo Réservia"></div>
         <div>
             <nav>
                 <ul>
                     <li><a href="#hebergements">Hébergements</a></li>
                     <li><a href="#activites">Activités</a></li>
-                    <li>//Nav or Menu ? </li>
                 </ul>
             </nav>
         </div>
         
     </header>
 
-    <section>
+    <section class="section_recherche">
         <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
         <p>En plein centre ville ou en pleine nature</p>
-        <div id="recherche">
+
+        <div class="recherche">
             <form action="">
-                <img src="" alt="">
-                <input type="text" placeholder="Marseille, France" name="search">
+                <div class="search_icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <input type="text" placeholder=" Marseille, France" name="search">
                 <button type="submit">Rechercher</button>
             </form>
         </div>
-        <div id="filtres">
-            <p>Filtres</p>
-            <button type="submit">Économique</button>
-            <button type="submit">Familial</button>
-            <button type="submit">Romantique</button>
-            <button type="submit">Animaux autorisés</button>
+
+        <div class="div_filtres">
+            <H5>Filtres</h5>
+            <div class="filter_btn">
+                <div class="filter_icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <button type="submit">Économique</button>
+            </div>
+
+            <div class="filter_btn">
+                <div class="filter_icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <button type="submit">Familial</button>
+            </div>
+            
+            <div class="filter_btn">
+                <div class="filter_icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <button type="submit">Romantique</button>
+            </div>
+            
+            <div class="filter_btn">
+                <div class="filter_icon">
+                    <i class="fas fa-dog"></i>
+                </div>
+                <button type="submit">Animaux autorisés</button>
+            </div>
+            
         </div>
-        <div id="info">
-            <p>Plus de 500 logmeents sont disponibles dans cette ville</p>
+        <div class="info">
+            <div class="info_icon">
+                <i class="fas fa-info"></i>
+            </div>
+            <div class="info_text">
+                <p>Plus de 500 logmeents sont disponibles dans cette ville</p>
+            </div>
+           
         </div>
     </section>
 
-    <main>
+    <section class="section_hebergements">
         <h1>Hébergements à Marseille</h1>
         <div id="main_container">
             <div class="cards">
@@ -101,9 +136,11 @@
         <div>
             <h3><a href="">Afficher plus</a></h3>
         </div>
-    </main>
+    </section>
 
-    <aside>
+    <aside class="aside_populaires">
+
+        <h4>Les plus polpulaires</h4>
         <div class="cards">
             <img src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin">
             <div class="box">
@@ -134,7 +171,7 @@
 
     </aside>
 
-    <section id="activite">
+    <section class="section_activite">
         <div class="cards">
             <img src="Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-garde">
             <div class="box">
