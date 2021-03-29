@@ -4,6 +4,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.logo {
+    margin-left: 2em;
+    margin-top: 1em;
+}
 h2 {
     font-size: 1em;
 }
@@ -28,6 +32,28 @@ header li {
 
 }
 
+header a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+header li {
+    
+    padding-top: 1em;
+}
+
+a:hover { 
+    padding-top: 2em;
+    border-top: solid #0065FC;
+    color: #0065FC;
+}
+
+.inscription {
+    color:  #0065FC;
+    
+}
     
 img {
     width: 100%; 
@@ -181,4 +207,23 @@ div.cards {
 .section_hebergements, .aside_populaires, footer, .section_recherche, .section_activite {
     padding: 2em;
     margin: 2em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer div {
+    padding-left: 0.5em;
+    padding-right:0.5em;
+}
+
+footer li {
+    font-size: small;
 }
