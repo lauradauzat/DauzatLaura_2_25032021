@@ -198,6 +198,30 @@ div.cards {
     
 }
 
+main {
+
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+}
+
+.main_container {
+
+    display: grid;
+    grid-template: repeat(2, 200px) / repeat(3, 1fr);
+}
+
+.populaire-container {
+    display: grid; 
+    grid-template: repeat(3, 200px) / 1fr;
+    background-color: aqua;
+}
+
+.cards img {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+
 .section_hebergements, .aside_populaires, footer {
     background-color:#EFEFEF;
 }
@@ -208,6 +232,13 @@ div.cards {
     padding: 2em;
     margin: 2em;
 }
+
+.section_activite {
+    display: grid;
+    grid-template: repeat(2, 250px) / repeat(4, 1fr);
+}
+
+
 
 footer {
     display: flex;
