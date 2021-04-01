@@ -8,12 +8,26 @@ body {
     margin-left: 2em;
     margin-top: 1em;
 }
-h2 {
+h1 {
     font-size: 1em;
+    font-weight: bold;
 }
 
+h2 {
+    font-size: 0.7em;
+    font-weight: bolder;
+}
+
+h3 a {
+    font-size: small;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+
 p {
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 header {
@@ -180,22 +194,37 @@ button {
 
 
 
-div.box {
-    background-color: thistle;
-    padding-left: 52x; 
-    
-    
+.box {
+    padding-left: 5%;
 }
-
-div.cards {
+.cards {
     width: 80%;
-    border: solid yellow; 
     margin-bottom: 25px;
     border-radius: 5%;
     max-width: 200px;
     background-color: white;
+    height: 165px;
    
     
+}
+
+.star_row i {
+    font-size: x-small;
+   
+}
+
+.grey {
+    color: lightgray;
+}
+
+.box_img_hebergement {
+     height: 90px;
+}
+
+.box_img_hebergement img {
+    object-fit: cover;
+    height: 90px;
+    border: solid 3px white; 
 }
 
 main {
@@ -211,14 +240,23 @@ main {
 }
 
 .populaire-container {
-    display: grid; 
-    grid-template: repeat(3, 200px) / 1fr;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.cards img {
-    max-width: 100px;
-    max-height: 50px;
+
+
+.populaire-container .cards {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.box_img_populaire img {
+    object-fit: cover;
+    width: 100px;
+    height: 100%; 
+    border: solid 3px white; 
 }
 
 
@@ -227,6 +265,7 @@ main {
 }
 .section_hebergements, .aside_populaires {
     border-radius: 2%;
+    height: 500px;
 }
 .section_hebergements, .aside_populaires, footer, .section_recherche, .section_activite {
     padding: 2em;
@@ -258,3 +297,5 @@ footer div {
 footer li {
     font-size: small;
 }
+
+
