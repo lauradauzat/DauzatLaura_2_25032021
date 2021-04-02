@@ -274,7 +274,69 @@ main {
 
 .section_activite {
     display: grid;
-    grid-template: repeat(2, 250px) / repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 1fr, 1fr;
+    gap: 10px;
+
+}
+
+.section_activite .cards {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+
+.section_activite .cards_img_box {
+  
+    height: 90px;
+    border-radius: 10px 10px 0 0 ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section_activite .one {
+    grid-row: 1/3; 
+    height: 310px;
+}
+
+.section_activite .one .cards_img_box {
+    height: 250px;
+    background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+
+}
+
+
+.section_activite .two .cards_img_box {
+    height: 130px;
+    background-image: url(Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    
+}
+
+.section_activite .two{
+    height: 170px ;
+
+}
+
+
+.section_activite .three .cards_img_box {
+    background-image: url(Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+
+.section_activite .three {
+  grid-row-start: 0;
+  
+}
+
+.section_activite .five {
+    height: 105px;
+    
+}
+
+.section_activite .five .cards_img_box {
+    height: 65px;
+    background-image: url(Images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+
 }
 
 
