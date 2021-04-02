@@ -2,6 +2,11 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    margin:0;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .logo {
@@ -59,7 +64,7 @@ header li {
 }
 
 a:hover { 
-    padding-top: 2em;
+    padding-top: 1.5em;
     border-top: solid #0065FC;
     color: #0065FC;
 }
@@ -152,8 +157,8 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
 }
 i {
     font-size: small;
@@ -359,6 +364,9 @@ main {
 footer {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 footer ul {
@@ -369,6 +377,7 @@ footer ul {
 footer div {
     padding-left: 0.5em;
     padding-right:0.5em;
+    flex-basis: 33%;
 }
 
 footer li {
