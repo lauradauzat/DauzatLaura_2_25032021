@@ -203,10 +203,10 @@ button {
     padding-left: 5%;
 }
 .cards {
-    width: 80%;
+    width: 100%;
     margin-bottom: 25px;
     border-radius: 5%;
-    max-width: 200px;
+    max-width: 500px;
     background-color: white;
     height: 165px;
    
@@ -242,12 +242,14 @@ main {
 
     display: grid;
     grid-template: repeat(2, 200px) / repeat(3, 1fr);
+    gap: 20px;
 }
 
 .populaire-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 
@@ -280,8 +282,8 @@ main {
 .section_activite {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-row: 1fr, 1fr;
-    gap: 10px;
+    grid-row: 124px, 62px, 124px;
+    gap: 20px;
 
 }
 
@@ -301,7 +303,8 @@ main {
 }
 
 .section_activite .one{
-    grid-row: 1/3; 
+    grid-row: 1/4; 
+    grid-column: 1/2;
     height: 310px;
 }
 
@@ -311,6 +314,12 @@ main {
 
 }
 
+.section_activite .two{
+    height: 170px ;
+    grid-row: 1/3;
+    grid-column: 2/3;
+
+}
 
 .section_activite .two .cards_img_box {
     height: 130px;
@@ -318,14 +327,11 @@ main {
     
 }
 
-.section_activite .two{
-    height: 170px ;
 
-}
 
 .section_activite .three {
     grid-column: 3/4;
-    grid-row: 1/3;
+    grid-row: 1/4;
     height: 310px;
 }
 .section_activite .three .cards_img_box {
@@ -333,14 +339,20 @@ main {
     height: 250px;
 }
 
-
+.section_activite .four {
+    grid-column: 4/5;
+    grid-row: 1/2; 
+}
 
 .section_activite .four .cards_img_box {
      background-image: url(Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 
 }
+
 .section_activite .five {
     height: 105px;
+    grid-column: 2/3;
+    grid-row: 3/4;
     
 }
 
