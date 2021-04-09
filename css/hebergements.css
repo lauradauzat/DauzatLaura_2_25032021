@@ -9,6 +9,6 @@
 
 .box_img_hebergement img {
     object-fit: cover;
-    height: 100px;
+    height: 120px;
     border: solid 3px white; 
 }

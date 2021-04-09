@@ -1,0 +1,34 @@
+@media all and (max-width: 900px)   {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    .section_hebergements {
+        order: 2; 
+    }
+
+    .aside_populaires {
+        order:1; 
+    }
+
+    .aside_populaires .populaire-container {
+        display: grid;
+        grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+    }
+
+    .aside_populaires .cards {
+        flex-direction: column;
+        height: unset;
+    }
+
+    .aside_populaires .box_img_populaire {
+        width: 100%;
+        height: 120px;
+        border: solid 3px white; 
+        border-radius: 5% 5% 0 0;
+    }
+
+    .aside_populaires img {
+        border-radius: 5% 5% 0 0;
+    }
+}
