@@ -1,0 +1,38 @@
+.aside_populaires .aside-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside_populaires .aside-title i {
+    color: black;
+}
+
+.aside_populaires .populaire-container {
+    display: grid; 
+    gap: 20px
+}
+
+.aside_populaires .cards {
+    display: flex; 
+    height: 120px ;
+}
+
+.aside_populaires .box_img_populaire {
+    width: 40%; 
+    min-width: 120px;
+}
+
+.aside_populaires .box {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside_populaires img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5% 0% 0% 5% ;
+}

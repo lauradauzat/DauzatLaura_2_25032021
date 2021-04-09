@@ -55,7 +55,9 @@ img {
 }
 
 
-
+button:hover {
+    cursor: pointer;
+}
 
 form {
     display: flex;
