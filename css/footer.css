@@ -1,0 +1,23 @@
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer div {
+    padding-left: 0.5em;
+    padding-right:0.5em;
+    flex-basis: 33%;
+}
+
+footer li {
+    font-size: small;
+}
