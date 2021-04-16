@@ -6,8 +6,20 @@
         flex-wrap: wrap;
     }
 
-    
+    .search-btn_big-screen {
+        display: none;
+    }
 
+    .search-btn_small-screen {
+        display: block;
+        
+    }
+    
+    
+    .recherche button {
+        border-radius: 10px;
+    }
+    
     /*SECTION HEBERGEMENT*/
 
 

@@ -42,6 +42,7 @@
 @media all and (max-width: 686px)   {
    
 
+
     .section_activite .grid-parent-activite {
 
         grid-template:
@@ -89,6 +90,7 @@
     
     }
 
+  
     /* SECTION POPULAIRES */
 
     .aside_populaires {
