@@ -1,19 +1,42 @@
 
-header {
+ /* header {
     display: flex;
     justify-content: space-between;
-}
+} */
 
-header ul {
-    display: flex; 
-    flex-direction: row;
+/* header ul {
+     display: flex; 
+    flex-direction: row; 
     list-style: none;
+} */
+
+header {
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'logo hebergement activite inscrire';
 }
 
-header li {
-    padding-right: 4em;
-
+.logo {
+    grid-area: logo;
+    width: 50px;
+    margin-top: 0;
 }
+
+.nav_hebergement {
+    grid-area: hebergement;
+}
+
+.nav_activite {
+    grid-area: activite; 
+}
+
+.nav_inscription {
+    grid-area: inscrire;
+}
+
 
 header a {
     outline: none;
@@ -22,12 +45,13 @@ header a {
 
 }
 
-header li {
+header div {
     
+    font-size: small;
     padding-top: 1em;
 }
 
-header a:hover { 
+.nav_hebergement:hover, .nav_activite:hover, .nav_inscription:hover { 
     padding-top: 1.5em;
     border-top: solid #0065FC;
     color: #0065FC;
@@ -38,11 +62,7 @@ header a:hover {
     
 }
     
-img {
-    width: 100%; 
-    border-radius: 5% 5% 0% 0%;
-    
-}
+
 
 .recherche {
     
@@ -108,12 +128,19 @@ form {
 .search-btn_small-screen {
     display: none;
 }
+
+
 .div_filtres {
 
     display: flex;
-    align-items: center;
     margin-top: 1em;
  
+}
+
+.filter-section__all-filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .filter_btn {
     display: flex;
@@ -179,3 +206,65 @@ button {
 
 }
 
+@media all and (max-width: 700px)   {
+
+    header {
+        
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 50px 20px;
+        grid-gap: 0;
+        grid-template-areas: 
+        'logo inscrire ' 
+        'hebergement activite ';
+    }
+
+    header .nav_activite, .nav_hebergement{
+        text-align: center;
+        padding-bottom: 25px;
+        border-bottom: 3px solid #f1f1f1;
+
+    
+    }
+
+    header .nav_activite:hover, .nav_hebergement:hover{
+        
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        padding-bottom: 18px;
+  
+        
+    
+    }
+
+    header .nav_activite:hover a, .nav_hebergement:hover a{
+        color: #0065FC;
+    
+    }
+
+
+    header .nav_inscription {
+        text-align: end;
+        padding-right: 2em;
+    }
+
+}
+
+@media all and (max-width: 400px)   {
+
+    /*HEADER QUI MET LA ZONE*/
+
+
+    .search-btn_big-screen {
+        display: none;
+    }
+
+    .search-btn_small-screen {
+        display: block;
+        
+    }
+    
+
+    .recherche button {
+        border-radius: 10px;
+    }
+}  
