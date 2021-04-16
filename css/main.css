@@ -3,6 +3,7 @@ main {
 
     display: grid; 
     grid-template-columns: 2fr 1fr;
+    grid-auto-flow: row dense;
 }
 
 .cards i {
@@ -16,6 +17,8 @@ main {
     width: 100%;
     border-radius: 5%;
     background-color: white; 
+    border:white 3px solid;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .star_row i {
