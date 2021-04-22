@@ -12,3 +12,45 @@
     height: 120px;
     border: solid 3px white; 
 }
+
+@media all and (max-width: 900px) {
+
+    .section_hebergements {
+        order: 2; 
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    .grid-parent-hebergement {
+
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        
+    }
+
+    .section_hebergements {
+        background-color: white;
+        margin-left: 0;
+        margin-right: 0;
+ 
+     }
+}
+
+
+@media all and (max-width: 400px)  {
+    .grid-parent-hebergement {
+
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+        gap: 20px;
+    }
+
+
+    
+    
+    .box_img_hebergement img {
+        object-fit: cover;
+        height: 120px;
+        border: solid 3px white; 
+    }
+}

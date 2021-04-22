@@ -7,16 +7,19 @@
 }
 
 
+.section_activite .cards {
+    border: none;
+}
 .section_activite .cards_img_box {
-    border-radius: 10px 10px 0 0 ;
+    border-radius: 15px 15px 0 0 ;
 }
 
 .section_activite .box {
-    height: 50px;
+    height: 40px;
 }
 
 .section_activite .cards_img_box {
-    height: calc(100% - 50px);
+    height: calc(100% - 40px);
 }
 .one {
     grid-row: 1/4;
@@ -46,4 +49,76 @@
 .six {
     grid-column: 4/5;
     grid-row: 2/4;
+}
+
+@media all and (max-width: 686px)  {
+
+    .section_activite .grid-parent-activite {
+
+        grid-template:
+        'one two three'
+        'four five six';
+    }
+
+    .one {
+        grid-area: one;
+    }
+    
+    .two {
+        grid-area: two;
+    }
+    
+    .three {
+        grid-area: three;
+    }
+    
+    .four {
+        grid-area: four;
+    }
+    
+    .five {
+        grid-area: five;
+    }
+    
+    .six {
+        grid-area: six;
+    }
+    
+    .section_activite .cards {
+        height: 160px;
+    }
+}
+
+
+@media all and (max-width: 500px) {
+
+    .section_activite .grid-parent-activite {
+
+        grid-template:
+        'one two'
+        'three four'
+        'five six';
+
+    }
+
+}
+
+
+@media all and (max-width: 360px)  {
+
+
+    
+    .section_activite .grid-parent-activite{
+    
+        grid-template:
+        'one'
+        'two'
+        'three'
+        'four'
+        'five'
+        'six';
+    
+    }
+
+    
 }

@@ -1,49 +1,5 @@
-@media all and (max-width: 400px)   {
-
-   
-    /*SECTION HEBERGEMENT*/
 
 
-  
 
- 
-    .grid-parent-hebergement {
-
-        display: grid;
-        grid-template: repeat(3, 1fr) / repeat(1, 1fr);
-        gap: 20px;
-    }
-
-
-    
-    
-    .box_img_hebergement img {
-        object-fit: cover;
-        height: 120px;
-        border: solid 3px white; 
-    }
-    
-
-}
-
-
-@media all and (max-width: 360px)  {
-
-    /* SECTION ACTIVITE  */
-    
-    .section_activite .grid-parent-activite{
-    
-        grid-template:
-        'one'
-        'two'
-        'three'
-        'four'
-        'five'
-        'six';
-    
-    }
-
-    
-}
 
 

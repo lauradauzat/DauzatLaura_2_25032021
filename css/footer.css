@@ -21,3 +21,11 @@ footer div {
 footer li {
     font-size: small;
 }
+
+@media all and (max-width: 500px) {
+    footer {
+        flex-direction: column;
+        
+    }   
+    
+}
