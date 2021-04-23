@@ -1,3 +1,4 @@
+/* mise en page globale */
 
 main {
 
@@ -6,9 +7,23 @@ main {
     grid-auto-flow: row dense;
 }
 
-.cards i {
-    padding-bottom: 1em; 
+* {
+    box-sizing: border-box;
 }
+
+
+
+.section_hebergements, .aside_populaires, footer {
+    background-color:#EFEFEF;
+}
+
+.section_hebergements, .aside_populaires, footer, .section_recherche, .section_activite {
+    padding: 1em;
+    margin: 1em;
+}
+
+
+/* Mise en page globale des cartes */
 
 .box {
     padding-left: 15px;
@@ -21,23 +36,8 @@ main {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.star_row i {
-    font-size: x-small;
-   
-}
-
-.grey {
-    color: lightgray;
-}
-
-
-.section_hebergements, .aside_populaires, footer {
-    background-color:#EFEFEF;
-}
-
-.section_hebergements, .aside_populaires, footer, .section_recherche, .section_activite {
-    padding: 1em;
-    margin: 1em;
+.cards i {
+    padding-bottom: 1em; 
 }
 
 .cards_img_box img {
@@ -51,6 +51,24 @@ img {
     border-radius: 15px 15px 0px 0px;
     
 }
+
+
+.star_row i {
+    font-size: x-small;
+   
+}
+
+.cards:hover {
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+
+
 
 @media all and (max-width: 900px) {
     main {

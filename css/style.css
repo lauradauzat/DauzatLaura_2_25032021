@@ -1,3 +1,5 @@
+/* Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500&display=swap');
 
 
@@ -6,14 +8,7 @@ body {
     margin:0;
 }
 
-* {
-    box-sizing: border-box;
-}
 
-.logo {
-    margin-left: 2em;
-    margin-top: 1em;
-}
 h1 {
     font-size: 1em;
     font-weight: bold;
@@ -38,10 +33,6 @@ p {
     margin: 0;
 }
 
-.cards:hover {
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    transform: scale(1.01);
-    cursor: pointer;
+.grey {
+    color: lightgray;
 }
-

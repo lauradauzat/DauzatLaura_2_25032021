@@ -2,7 +2,7 @@
 header {
     display: grid;
     grid-template-columns: 6fr 1fr 1fr 1fr;
-    grid-template-rows: 50px;
+    grid-template-rows: 60px;
     grid-gap: 20px;
     grid-template-areas: 
     'logo hebergement activite inscrire';
@@ -11,9 +11,12 @@ header {
 .logo {
     grid-area: logo;
     width: 50px;
-    margin-top: 0;
+    margin-top: 1em;
+    margin-left: 2em;
     width: max-content;
 }
+
+
 
 .nav_hebergement {
     grid-area: hebergement;
@@ -29,14 +32,11 @@ header {
 
 
 header a {
-    outline: none;
     text-decoration: none;
     color: black;
-
 }
 
 header div {
-    
     font-size: small;
     padding-top: 1em;
 }
@@ -212,7 +212,7 @@ button {
     header {
         
         grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 50px 50px;
+        grid-template-rows: 60px 50px;
         grid-gap: 0;
         grid-template-areas: 
         'logo inscrire ' 
