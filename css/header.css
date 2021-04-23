@@ -124,6 +124,9 @@ form {
     display: none;
 }
 
+.search-btn_big-screen {
+    display: block;
+}
 
 .div_filtres {
 
