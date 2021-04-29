@@ -1,6 +1,5 @@
 
 .grid-parent-hebergement {
-
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 20px;
@@ -38,6 +37,7 @@
 
 
 @media all and (max-width: 400px)  {
+    
     .grid-parent-hebergement {
 
         display: grid;

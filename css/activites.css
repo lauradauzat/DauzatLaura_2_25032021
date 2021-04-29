@@ -57,7 +57,7 @@
     grid-row: 2/4;
 }
 
-@media all and (max-width: 686px)  {
+@media all and (max-width: 816px)  {
 
     .section_activite .grid-parent-activite {
 
@@ -96,7 +96,7 @@
 }
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 647px) {
 
     .section_activite .grid-parent-activite {
 
@@ -110,7 +110,7 @@
 }
 
 
-@media all and (max-width: 360px)  {
+@media all and (max-width: 434px)  {
 
 
     
