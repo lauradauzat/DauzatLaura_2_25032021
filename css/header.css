@@ -4,6 +4,7 @@ header {
     grid-template-columns: 6fr 1fr 1fr 1fr;
     grid-template-rows: 60px;
     grid-gap: 20px;
+    text-align: center;
     grid-template-areas: 
     'logo hebergement activite inscrire';
 }
@@ -11,7 +12,7 @@ header {
 .logo {
     grid-area: logo;
     width: 50px;
-    margin-top: 1em;
+    margin-top: 0.5em;
     margin-left: 2em;
     width: max-content;
 }
@@ -38,7 +39,6 @@ header a {
 
 header div {
     font-size: small;
-    padding-top: 1em;
 }
 
 .nav_hebergement, .nav_activite, .nav_inscription { 
@@ -62,13 +62,19 @@ header div {
 
 .recherche {
     
-    width: 260px;
-    height: 30px;
+    width: 30px;
+    height: 40px;
     display: flex;
     text-align: center;
-    justify-content: center;
+    margin-bottom: 1em;;
 }
 
+.catch-phrase {
+    font-weight: 400;
+}
+.filter-title {
+    font-weight:900;
+}
 
 button:hover {
     cursor: pointer;
@@ -90,7 +96,7 @@ form {
     align-items: center;
     justify-content: center;
     width: 30px;
-    height: 30px;
+    height: 40px;
 }
 
 .search_icon i {
@@ -103,7 +109,7 @@ form {
 
 .recherche button {
     background: none;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0;
     margin-right: 1em;
     padding-right: 0.8em;
@@ -118,6 +124,7 @@ form {
 }
 
 .recherche input {
+    width: 190px;
     border: solid 1px #F2F2F2;
 }
 .search-btn_small-screen {
@@ -126,13 +133,18 @@ form {
 
 .search-btn_big-screen {
     display: block;
+    width: 80px;
+    font-size: 20px;
 }
 
 .div_filtres {
 
     display: flex;
-    margin-top: 1em;
  
+}
+
+.div_filtres h5 {
+    margin-right: 1em;
 }
 
 .filter-section__all-filters {
@@ -142,11 +154,14 @@ form {
 }
 .filter_btn {
     display: flex;
-    margin-left: 1em;
-    border : solid 1px #F2F2F2;
-    border-radius: 25px;
     margin-bottom: 5px;
     margin-top: 5px;
+    margin-right: 0;
+}
+
+.filter_btn button {
+    background: none;
+    margin-left: 0;
 }
 
 .filter_btn:hover {
@@ -165,12 +180,14 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
+    width: 35px;
+    height: 35px;
+  
 }
 i {
     font-size: small;
     color: #0065FC;
+  
 
     
 }
@@ -180,12 +197,16 @@ i {
 }
 
 button {
-    background-color: white;
-    border: none;
-    margin-right: 1em;
-    margin-left: 1em;
     font-weight: bold;
-}
+    border: 2px rgba(136, 136, 136, 0.247) solid; 
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-right: 10px;
+    position: relative;
+    right: 33px;
+    z-index: -1;
+    
+} 
 
 .info {
     display: flex;
@@ -270,7 +291,17 @@ button {
         
     }
 
+    .recherche button {
+        border-radius: 10px;
+        padding: 0.9em;
+        z-index: 1;
+    }
+
     .recherche {
         width: fit-content;
+    }
+
+    .div_filtres .filter-title {
+        margin-bottom: 0.5em;
     }
 }  

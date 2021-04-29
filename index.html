@@ -6,39 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
 
-    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.css">
     
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/hebergements.css">
-    <link rel="stylesheet" href="css/populaires.css">
-    <link rel="stylesheet" href="css/activites.css">
-    <link rel="stylesheet" href="css/footer.css">
- 
-    <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/mediumscreen.css">
-    <link rel="stylesheet" media="screen and (max-width: 550px)" href="css/smallscreen.css">
-
     <script src="https://kit.fontawesome.com/44a9982843.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-
         <div class="logo">
             <img src="images/logo/Reservia.svg" alt="Logo Réservia">
         </div>
 
-        <div class="nav_hebergement"><a href="#hebergements">Hébergements</a></div>
+        <div class="nav_hebergement">
+            <a href="#hebergements">Hébergements</a>
+        </div>
 
-        <div class="nav_activite"><a href="#activites">Activités</a></div>
+        <div class="nav_activite">
+            <a href="#activites">Activités</a>
+        </div>
 
-        <div class="nav_inscription"><a class="inscription" href=""><strong>S'inscrire</strong></a></div>
-
-
+        <div class="nav_inscription">
+            <a class="inscription" href=""><strong>S'inscrire</strong></a>
+        </div>
     </header>
 
     <section class="section_recherche">
         <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
-        <p>En plein centre ville ou en pleine nature</p> <br>
+
+        <h5 class="catch-phrase">En plein centre ville ou en pleine nature</h5> 
+        <br>
 
         <div class="recherche">
             <form >
@@ -46,12 +41,15 @@
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <input type="text" placeholder=" Marseille, France" name="search">
-                <button type="submit"><div class="search-btn_big-screen"> <p>Rechercher</p></div><i class="fas fa-search search-btn_small-screen"></i></button>
+                <button type="submit">
+                    <div class="search-btn_big-screen"> <p>Rechercher</p></div>
+                    <div class="search-btn_small-screen"><i class="fas fa-search "></i></div>        
+                </button>
             </form>
         </div>
 
         <div class="div_filtres">
-            <H5>Filtres</h5>
+            <h5 class="filter-title">Filtres</h5>
                 
             <div class="filter-section__all-filters"  >
                 <div class="filter_btn">

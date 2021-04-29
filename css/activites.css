@@ -16,6 +16,12 @@
 
 .section_activite .box {
     height: 40px;
+    
+}
+
+.section_activite .box h2 {
+    padding-top: 6px;
+
 }
 
 .section_activite .cards_img_box {
