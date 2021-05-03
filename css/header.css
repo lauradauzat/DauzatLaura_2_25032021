@@ -110,6 +110,7 @@ form {
     background-color: #0065FC;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    height: 40px;
     
 
 }
@@ -122,18 +123,23 @@ form {
     width: 190px;
     border: solid 1px #F2F2F2;
 }
-.recherche .button .i{
+.recherche .small-button {
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: hidden;
+
+}
+
+.recherche .small-button   {
     display: none;
 }
 
- .search-btn_big-screen {
-    display: block;
-    width: 80px;
-    font-size: 13px;
-    display: block;
-    padding-top: 8px;
-
+.recherche button {
+    border: none;
 }
+
+
 
 
 .div_filtres {
@@ -196,7 +202,7 @@ i {
     font-size: 10px;
 }
 
-button {
+.div_filtres button {
     font-weight: bold;
     border: 2px rgba(136, 136, 136, 0.247) solid; 
     border-radius: 25px;
@@ -277,16 +283,20 @@ button {
 
 @media all and (max-width: 400px)   {
 
-    .search-btn_big-screen {
+    .big-button{
         display: none;
     }
 
-    .fa-search {
-        display: block;
-        color:white;
-        
+    
+    .recherche .small-button  {
+        display: block;   
+        padding-left: 0;
+        margin-left: 0;  
     }
 
+    .recherche .small-button i {
+        color: white;
+    }
 
     .recherche button {
         border-radius: 10px;
@@ -294,9 +304,7 @@ button {
         z-index: 1;
     }
 
-    .recherche {
-        width: fit-content;
-    }
+    
 
     .div_filtres .filter-title {
         margin-bottom: 0.5em;
