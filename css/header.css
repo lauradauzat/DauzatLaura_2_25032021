@@ -231,20 +231,20 @@ button {
 @media all and (max-width: 700px)   {
 
     header {   
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr   1fr; 
         grid-template-rows: 60px 50px;
         grid-gap: 0;
         grid-template-areas: 
-        'logo inscrire ' 
-        'hebergement activite ';
+        'logo  inscrire ' 
+        'hebergement  activite ';
     }
 
-    header .nav_activite, .nav_hebergement{
+    header .nav_activite, .nav_hebergement, {
         text-align: center;
         border-bottom: 3px solid #f1f1f1;
     }
 
-    header .nav_activite:hover, .nav_hebergement:hover{  
+    header .nav_activite:hover, .nav_hebergement:hover, .nav_inscription:hover {  
         border-bottom: 3px solid #0065FC;
         border-top: 3px solid white;
     }

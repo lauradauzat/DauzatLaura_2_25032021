@@ -126,5 +126,25 @@
     
     }
 
-    
+    .section_activite, .section_hebergements, .aside_populaires, main, body {
+      
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .section_hebergements {
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+    .aside_populaires .cards{
+        margin-right: 0;
+        margin-left: 0;
+       
+    }
+
+
 }
+
+

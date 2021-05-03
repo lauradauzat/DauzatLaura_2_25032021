@@ -3,7 +3,10 @@
 main {
 
     display: grid; 
-    grid-template-columns: 2fr 1fr;
+    /* grid-template-columns: 2fr 1fr; */
+    grid-template: 
+    "hebergement hebergement populaire" 
+    "activite activite activite"; 
     grid-auto-flow: row dense;
     margin-left: 1em;
     margin-right: 1em;
@@ -12,6 +15,24 @@ main {
 * {
     box-sizing: border-box;
 }
+
+/*GRID AREAS OF MAIN*/
+
+.section_hebergements {
+    grid-area: hebergement;
+}
+
+.aside_populaires {
+    grid-area: populaire;
+}
+
+.section_activite{
+    grid-area: activite;
+}
+
+/*_____________________*/
+
+
 
 .section_hebergements, .aside_populaires {
     border-radius: 15px;
@@ -75,7 +96,11 @@ img {
 @media all and (max-width: 900px) {
     
     main {
-        grid-template-columns: 1fr;
+        grid-template: 
+        " populaire"
+        " hebergement "
+        " activite ";
     }
     
 }
+
