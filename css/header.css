@@ -239,7 +239,7 @@ button {
         'hebergement  activite ';
     }
 
-    header .nav_activite, .nav_hebergement, {
+    header .nav_activite, .nav_hebergement {
         text-align: center;
         border-bottom: 3px solid #f1f1f1;
     }
