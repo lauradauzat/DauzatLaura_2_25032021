@@ -99,10 +99,6 @@ form {
     color: black; 
 }
 
-.recherche button i {
-    color:white;
-}
-
 
 
 .recherche button {
@@ -114,6 +110,8 @@ form {
     background-color: #0065FC;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    
+
 }
 
 .recherche ::placeholder {
@@ -124,14 +122,16 @@ form {
     width: 190px;
     border: solid 1px #F2F2F2;
 }
-.search-btn_small-screen {
+.recherche .button .i{
     display: none;
 }
 
-.search-btn_big-screen {
+ .search-btn_big-screen {
     display: block;
     width: 80px;
-    font-size: 20px;
+    font-size: 13px;
+    display: block;
+    padding-top: 8px;
 
 }
 
@@ -281,10 +281,12 @@ button {
         display: none;
     }
 
-    .search-btn_small-screen {
+    .fa-search {
         display: block;
+        color:white;
         
     }
+
 
     .recherche button {
         border-radius: 10px;
